@@ -1,0 +1,180 @@
+/* PlanDetailPage.css (Advanced Graphical Style) */
+
+.plan-detail-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa, #e0eafc);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .plan-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2px solid #dce3f0;
+    padding-bottom: 1rem;
+  }
+  
+  .plan-header img {
+    width: 240px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan-title-overlay h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #1a237e;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .plan-title-overlay p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  .plan-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .nutrition-overview {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem 2rem;
+    border: 1px solid #cfd8dc;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .nutrition-overview:hover {
+    transform: scale(1.02);
+  }
+  
+  .nutrition-overview h2 {
+    font-size: 1.6rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    border-left: 6px solid #66bb6a;
+    padding-left: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .nutrition-overview ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nutrition-overview li {
+    padding: 0.6rem 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ccc;
+  }
+  
+  .chart-wrapper {
+    background: #e8f5e9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: inset 0 0 14px rgba(76, 175, 80, 0.1);
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .meal-plan {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border-left: 6px solid #42a5f5;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  }
+  
+  .meal-plan h2 {
+    font-size: 1.6rem;
+    color: #1565c0;
+    margin-bottom: 0.75rem;
+  }
+  
+  .meal-plan h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .meal-plan ul {
+    list-style: disc;
+    margin-left: 1.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .nutritional-benefits {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    background: #f1f8e9;
+    padding: 1.5rem 2rem;
+    border-radius: 14px;
+    border-left: 6px solid #81c784;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+  }
+  
+  .nutritional-benefits h2 {
+    font-size: 1.6rem;
+    color: #388e3c;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  
+  .benefit-box {
+    background: #ffffff;
+    padding: 1.25rem;
+    border-radius: 12px;
+    border-left: 5px solid #4caf50;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-box h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefit-box p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
